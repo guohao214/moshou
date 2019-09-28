@@ -1,0 +1,19 @@
+<template name="articles">
+  <view class="cu-card article" wx:for="{{articles}}" wx:key="{{index}}" bindtap="goArticle">
+    <view class="cu-item shadow">
+      <view class="title">
+        <view class="text-cut">{{item.title}}</view>
+      </view>
+      <view class="content">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <view class="desc">
+          <view class="text-content">{{item.description}}</view>
+          <view>
+            <view class="cu-tag {{subx == 1 ? 'bg-green' : 'bg-red'}} light sm round" wx:for-index="subx"
+						wx:for-item="sub" wx:for="{{item.tags}}" wx:key="{{sub}}">{{sub}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

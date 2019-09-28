@@ -1,0 +1,11 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+.cu-card {
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.cu-card>.cu-item {
+  margin: 15rpx 25rpx;
+}

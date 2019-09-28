@@ -1,0 +1,11 @@
+<import src="/pages/articles" />
+<cu-custom>
+  <view slot="content">魔兽PVP</view>
+</cu-custom>
+
+<scroll-view class="" scroll-y="true" style="height: {{bodyHeight}}px" scroll-top="0" scroll-with-animation="true" enable-back-to-top="{{true}}" bindscrolltolower="loadData">
+	<!-- <view class="adContainer">
+		<ad unit-id="index"></ad>
+	</view> -->
+  <template is="articles" data="{{articles}}" />
+</scroll-view>

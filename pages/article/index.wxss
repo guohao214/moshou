@@ -1,0 +1,38 @@
+/**index.wxss**/
+.image {
+	margin: 10rpx 0;
+}
+
+.text-content::first-letter {
+	padding-left: 15rpx;
+}
+
+.menu-avatar {
+	margin-bottom: 30rpx;
+}
+
+video {
+	width: 100%;
+}
+
+.share {
+
+}
+
+button {
+	font-size: 32rpx;
+	border-radius: 0;
+	background: #fff;
+	flex: 1;
+	color: green;
+}
+
+button::after {
+	border-radius: none;
+	border:none;
+}
+
+.button-hover {
+	color: #222;
+	background-color: #fff;
+}
